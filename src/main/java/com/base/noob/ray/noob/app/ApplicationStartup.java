@@ -13,9 +13,9 @@ public class ApplicationStartup implements ApplicationListener<ContextRefreshedE
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
 
-        //start update mysql
-        NoobUpdate noobUpdate =  contextRefreshedEvent.getApplicationContext().getBean(NoobUpdate.class);
-        noobUpdate.init();
+//        //start update mysql
+//        NoobUpdate noobUpdate =  contextRefreshedEvent.getApplicationContext().getBean(NoobUpdate.class);
+//        noobUpdate.init();
 
 
         //start binglog

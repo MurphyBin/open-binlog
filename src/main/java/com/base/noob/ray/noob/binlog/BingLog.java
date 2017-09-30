@@ -20,6 +20,8 @@ public class BingLog {
         aor.setPassword("000123");
         aor.setAutoReconnect(true);
         aor.setDelayReconnect(5);
+        aor.setBinlogFileName("mysql-bin.000007");
+        aor.setBinlogPosition(4L);
         aor.setBinlogEventListener(notificationListener);
         aor.start();
     }

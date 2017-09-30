@@ -19,7 +19,7 @@ public class TableMapEventProcessor implements EventProcess {
     @Override
     public void process(BinlogEventV4 event) {
 
-        log.error("**************start to 插入事件, UpdateRowsEventV2: {}", JSONObject.toJSONString(event));
+        log.error("**************start to Table事件, UpdateRowsEventV2: {}", JSONObject.toJSONString(event));
         TableMapEvent tableMapEvent = (TableMapEvent) event;
         String tableName = tableMapEvent.getDatabaseName() + "." + tableMapEvent.getTableName();
 

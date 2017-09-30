@@ -28,7 +28,7 @@ public class NotificationListener implements BinlogEventListener {
     public void onEvents(BinlogEventV4 event) {
 
 
-        logger.error("****************************EVENT IN *************************************");
+        logger.error("********************************************** EVENT IN *******************************************************");
         logger.error("eventType: {} , event: {}", event.getClass(), JSON.toJSON(event));
         eventProcessorFactory.process(event);
     }
