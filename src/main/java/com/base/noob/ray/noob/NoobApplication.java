@@ -13,10 +13,10 @@ public class NoobApplication {
 	public static void main(String[] args) {
 
 		log.info("#########################################################################################");
-		log.info("#### set default uncaught exception handler");
+		log.info("**** set default uncaught exception handler ****");
 		setGlobalUncaughtExceptionHandler();
 
-		log.info("#### start NoobApplication");
+		log.info("**** start NoobApplication ****");
 		SpringApplication.run(NoobApplication.class, args);
 	}
 

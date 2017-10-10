@@ -24,7 +24,6 @@ public class NoobUpdate {
 
 
     public void init() {
-
         update = new UpdateImpl();
         update.start();
     }
